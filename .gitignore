@@ -1,0 +1,71 @@
+.idea
+
+app/node_modules
+app/.env
+app/npm-debug.log*
+
+# Terraform Files (CRITICAL - Contains secrets!)
+terraform/terraform.tfvars
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/tfplan
+terraform/*.tfplan
+
+# SSH Keys (NEVER commit private keys!)
+*.pem
+*.key
+*_key
+*_key.pub
+terraform_key*
+id_rsa*
+
+# Environment Variables (Contains database passwords!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+*.log.*
+/var/log/
+
+# PM2 Files
+.pm2/
+ecosystem.config.js.backup
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Database Dumps (if you create any)
+*.sql
+*.dump
